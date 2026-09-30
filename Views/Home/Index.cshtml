@@ -1,0 +1,111 @@
+﻿@using Lesson_2.Controllers
+@{
+    ViewData["Title"] = "Postal code of City";
+    var cities = (List<HomeController.City>)ViewBag.Cities;
+}
+
+<h1>MainPage</h1>
+
+<div class="container text-center">
+    <div class="row row-cols-2 row-cols-lg-3 g-3 g-lg-3">
+        <div class="col">
+            <a href="/Home/PostalCode/Zhytomyr">
+                <div class="card" style="width: 18rem;">
+                    <img src="@cities.FirstOrDefault(c => c.Name == "Zhytomyr").MainImageUrl" class="card-img-top" alt="Image of Zhytomyr">
+                    <div class="card-body">
+                        <p class="card-text">Zhytomyr</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+<a href="/Home/PostalCode/Kyiv">
+    <div class="card" style="width: 18rem;">
+        <img src="@cities.FirstOrDefault(c => c.Name == "Kyiv").MainImageUrl" class="card-img-top" alt="Image of Kyiv">
+        <div class="card-body">
+            <p class="card-text">Kyiv</p>
+        </div>
+    </div>
+</a>
+        </div>
+        <div class="col">
+<a href="/Home/PostalCode/Dnipro">
+    <div class="card" style="width: 18rem;">
+        <img src="@cities.FirstOrDefault(c => c.Name == "Dnipro").MainImageUrl" class="card-img-top" alt="Image of Dnipro">
+        <div class="card-body">
+            <p class="card-text">Dnipro</p>
+        </div>
+    </div>
+</a>
+        </div>
+        <div class="col">
+<a href="/Home/PostalCode/Lviv">
+    <div class="card" style="width: 18rem;">
+        <img src="@cities.FirstOrDefault(c => c.Name == "Lviv").MainImageUrl" class="card-img-top" alt="Image of Lviv">
+        <div class="card-body">
+            <p class="card-text">Lviv</p>
+        </div>
+    </div>
+</a>
+        </div>
+        <div class="col">
+<a href="/Home/PostalCode/Uzhhorod">
+    <div class="card" style="width: 18rem;">
+        <img src="@cities.FirstOrDefault(c => c.Name == "Uzhhorod").MainImageUrl" class="card-img-top" alt="Image of Uzhhorod">
+        <div class="card-body">
+            <p class="card-text">Uzhhorod</p>
+        </div>
+    </div>
+</a>
+        </div>
+        <div class="col">
+<a href="/Home/PostalCode/Odessa">
+    <div class="card" style="width: 18rem;">
+        <img src="@cities.FirstOrDefault(c => c.Name == "Odessa").MainImageUrl" class="card-img-top" alt="Image of Odessa">
+        <div class="card-body">
+            <p class="card-text">Odessa</p>
+        </div>
+    </div>
+</a>
+        </div>
+        <div class="col">
+<a href="/Home/PostalCode/Kharkiv">
+    <div class="card" style="width: 18rem;">
+        <img src="@cities.FirstOrDefault(c => c.Name == "Kharkiv").MainImageUrl" class="card-img-top" alt="Image of Kharkiv">
+        <div class="card-body">
+            <p class="card-text">Kharkiv</p>
+        </div>
+    </div>
+</a>
+        </div>
+        <div class="col">
+<a href="/Home/PostalCode/Zaporizhzhia">
+    <div class="card" style="width: 18rem;">
+        <img src="@cities.FirstOrDefault(c => c.Name == "Zaporizhzhia").MainImageUrl" class="card-img-top" alt="Image of Zaporizhzhia">
+        <div class="card-body">
+            <p class="card-text">Zaporizhzhia</p>
+        </div>
+    </div>
+</a>
+        </div>
+        <div class="col">
+<a href="/Home/PostalCode/Poltava">
+    <div class="card" style="width: 18rem;">
+        <img src="@cities.FirstOrDefault(c => c.Name == "Poltava").MainImageUrl" class="card-img-top" alt="Image of Poltava">
+        <div class="card-body">
+            <p class="card-text">Poltava</p>
+        </div>
+    </div>
+</a>
+        </div>
+        <div class="col">
+<a href="/Home/PostalCode/Lutsk">
+    <div class="card" style="width: 18rem;">
+        <img src="@cities.FirstOrDefault(c => c.Name == "Lutsk").MainImageUrl" class="card-img-top" alt="Image of Lutsk">
+        <div class="card-body">
+            <p class="card-text">Lutsk</p>
+        </div>
+    </div>
+</a>
+        </div>
+    </div>
